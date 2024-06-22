@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root{
+    --red : rgb(255, 255, 255);
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+  }
+.span1{
+    color: yellow;
+}
+
+body {
+    background: #f8e2b2;
+  }
+
+  section {
+    padding: 2rem 9%;
+  }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(72, 34, 97);
+    /* background: rgb(35,63,114); */
+    padding: .4rem 9%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.295);
+  }
+  
+  header .logo {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: rgb(221, 223, 54);
+  }
+
+  header .logo i {
+    padding-right: 0.5rem;
+    color: #fff;
+  }
+
+  .searchBox {
+      border: 1.5px solid rgb(255, 255, 255);
+      padding-left: .5rem;
+      border-radius: 25px;
+      background-color: rgb(255, 255, 255);
+  }
+.searchButton {
+    color: white;
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #205b8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+
+.searchInput {
+    width: 230px;
+    padding: 0 6px;
+    background: none;
+    outline:none;
+    padding: 0;
+    color: rgb(122, 40, 40);
+    font-size: 12px;
+    line-height: 35px;
+}
+
+.content {
+    height: 900px;
+}
+.head {
+  margin-top: 100px;
+  margin-right: 20vw;
+  margin-left: 30vw;
+  text-align: center;
+  font-size: 30px;
+  background-color: #6f459e;
+  color: white;
+  border-radius: 19px;
+  font-weight: bolder;
+}
+
+.data-container {
+  width: 600px;
+  height: 384px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.bar {
+  width: 28px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0, 183, 255);
+  transition: 0.2s all ease;
+}
+
+.bar__id {
+  position: absolute;
+  top: -24px;
+  width: 100%;
+  text-align: center;
+}
+.btn1 {
+  padding: 12px;
+  font-weight: bolder;
+  background-color: #6f459e;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  border: white;
+  margin-left: 37vw;
+  margin-top: 4vw;
+  margin-right: 1vw;
+}
+.btn2 {
+  padding: 12px;
+  font-weight: bolder;
+  background-color: #6f459e;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  border: white;
+}
+
+.navigation {
+  position: fixed;
+  left: 10px;
+  top: 51px;
+  height: 100%;
+  /* inset: 51px 0px 0px 10px; */
+  width: 200px;
+  background: rgba(138, 177, 20, 0.982);
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.navigation ul li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 57px;
+  border-radius: 10px ;
+  transition: 0.5s;
+  border: 1px solid #fff;
+}
+
+.navigation ul li a{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+
+
+.navigation ul li a .text {
+  padding: 10px;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 55px;
+  height: 55px;
+  line-height: 60px;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.footer {
+    background: rgb(48, 43, 43);
+    text-align: center;
+    height: fit-content;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  .footer .share {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer .credit {
+    padding: .5rem .5rem;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+
+  
+.wrapper .button {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin: 0 10px;
+    overflow: hidden;
+    /* background: rgb(255, 255, 255); */
+    border-radius: 50px;
+    cursor: pointer;
+    /* box-shadow: 0px 5px 5px rgba(209, 207, 207, 0.753); */
+    transition: all 0.3s ease-out;
+  }
+
+  .wrapper .button:nth-child(1) .icon {
+    background: #4267b6;
+  }
+  .wrapper .button:nth-child(2) .icon {
+    background: #4e89adbc;
+  }
+  .wrapper .button:nth-child(3) .icon {
+    background: #e1306c;
+  }
+  .wrapper .button:nth-child(4) .icon {
+    background: rgb(255, 255, 255);
+  }
+  .wrapper .button:nth-child(5) .icon {
+    background: #ff0000;
+  }
+
+  .wrapper .button:hover {
+    width: 150px;
+    background-color: #dae2e7;
+  }
+  .wrapper .button .icon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 30px;
+    transition: all 0.5s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon {
+    background: #4267b2;
+  }
+  .wrapper .button:nth-child(2):hover .icon {
+    background: #1da1f2;
+  }
+  .wrapper .button:nth-child(3):hover .icon {
+    background: #e1306c;
+  }
+  .wrapper .button:nth-child(4):hover .icon {
+    background: #333;
+  }
+  .wrapper .button:nth-child(5):hover .icon {
+    background: #ff0000;
+  }
+  .wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 30px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover .icon i {
+    color: #fff;
+  }
+  .wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1) span {
+    color: #4267b2;
+  }
+  .wrapper .button:nth-child(2) span {
+    color: #1da1f2;
+  }
+  .wrapper .button:nth-child(3) span {
+    color: #e1306c;
+  }
+  .wrapper .button:nth-child(4) span {
+    color: #333;
+  }
+  .wrapper .button:nth-child(5) span {
+    color: #ff0000;
+  }
+  
+  
